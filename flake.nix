@@ -173,6 +173,8 @@
               ripgrep
               fd
               jq
+
+              protobuf
             ];
 
             shellHook = ''
