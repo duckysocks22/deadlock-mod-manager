@@ -4,6 +4,7 @@ import { crosshairLikes, crosshairs } from "./crosshairs";
 import { featureFlags, userFeatureFlagOverrides } from "./feature-flags";
 import { mirroredFiles } from "./mirrored-files";
 import { modAuthors, modDownloads, mods } from "./mods";
+import { profileSync, profileSyncMembers } from "./profile-sync";
 
 export const mirroredFilesRelations = relations(mirroredFiles, ({ one }) => ({
   modDownload: one(modDownloads, {
@@ -81,3 +82,13 @@ export const crosshairLikesRelations = relations(crosshairLikes, ({ one }) => ({
     references: [user.id],
   }),
 }));
+
+export const profileSyncMembersRelations = relations(
+  profileSyncMembers,
+  ({ one }) => ({
+    sync: one(profileSync, {
+      fields: [profileSyncMembers.syncId],
+      references: [profileSync.id],
+    }),
+  }),
+);

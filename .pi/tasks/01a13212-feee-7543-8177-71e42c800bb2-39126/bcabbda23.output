@@ -1,0 +1,225 @@
+$ dotenv -e ../../.env -- bun run --watch --preload ./src/instrument.ts ./src/index.ts
+18:34:05 INFO api@2.0.0: Bootstrapping feature flags
+         environment=development
+18:34:05 INFO api@2.0.0 feature-flags: Starting feature flag bootstrap
+         environment=development count=15
+18:34:05 INFO api@2.0.0 feature-flags: Registering multiple feature flags
+         environment=development count=15
+18:34:05 INFO api@2.0.0 feature-flags: Completed feature flag registration
+         environment=development successCount=15 failureCount=0 total=15
+18:34:05 INFO api@2.0.0 feature-flags: Feature flag bootstrap completed
+         environment=development successCount=15 total=15
+18:34:05 INFO api@2.0.0: Server started
+         environment=development port=9010
+18:34:09 INFO api@2.0.0: Redis connected
+         environment=development requestId=52427d19-a08e-484f-9fe6-5a8b491f23f3
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync userAgent=curl/8.22.0 requestId=72add709-01d1-43d8-bcec-f65e6682518a orpcError.name=Error orpcError.message="Input validation failed" orpcError.code=BAD_REQUEST orpcError.validationIssues="[{\"code\":\"custom\",\"path\":[\"profile\"],\"message\":\"sync profile cannot exceed 200 mods\"}]" status_code=400 outcome=success duration_ms=7
+18:34:10 INFO api@2.0.0: Profile sync created
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=f6bb59e4-e1fa-4b66-80a9-1934e216c924
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync userAgent=curl/8.22.0 requestId=f6bb59e4-e1fa-4b66-80a9-1934e216c924 status_code=200 outcome=success duration_ms=17
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=c8564e92-b381-409e-a675-a9a4c235cb24 orpcError.name=Error orpcError.message="Input validation failed" orpcError.code=BAD_REQUEST orpcError.validationIssues="[{\"origin\":\"string\",\"code\":\"too_big\",\"maximum\":8,\"inclusive\":true,\"exact\":true,\"path\":[\"joinCode\"],\"message\":\"Too big: expected string to have <=8 characters\"},{\"origin\":\"string\",\"code\":\"invalid_format\",\"format\":\"regex\",\"pattern\":\"/^[23456789ABCDEFGHJKLMNPQRSTUVWXYZ]+$/\",\"path\":[\"joinCode\"],\"message\":\"join code must be 8 characters from the sync code alphabet\"}]" status_code=400 outcome=success duration_ms=2
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=d60b6b78-e370-42dd-80dc-e5fcd7059757
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=d60b6b78-e370-42dd-80dc-e5fcd7059757 status_code=200 outcome=success duration_ms=14
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=c064b47f-daae-4abb-b2b1-1f2f832172f3
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=c064b47f-daae-4abb-b2b1-1f2f832172f3 status_code=200 outcome=success duration_ms=18
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=356a01c9-5cdd-42bc-a9a0-0bd2c16e8ba9
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=356a01c9-5cdd-42bc-a9a0-0bd2c16e8ba9 status_code=200 outcome=success duration_ms=15
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=ec4f5b47-e079-4337-a540-968e773a5074
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=ec4f5b47-e079-4337-a540-968e773a5074 status_code=200 outcome=success duration_ms=17
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=09a9ddd9-011d-4ff3-940c-af76cba15ad4
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=09a9ddd9-011d-4ff3-940c-af76cba15ad4 status_code=200 outcome=success duration_ms=20
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=0b389d4e-f400-44a4-a00f-4076f60a894a
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=0b389d4e-f400-44a4-a00f-4076f60a894a status_code=200 outcome=success duration_ms=13
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=90519a11-96ab-4795-a2e9-845663fd9b64
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=90519a11-96ab-4795-a2e9-845663fd9b64 status_code=200 outcome=success duration_ms=14
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=62bbbe49-a70e-42c3-81c1-213c096e7418
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=62bbbe49-a70e-42c3-81c1-213c096e7418 status_code=200 outcome=success duration_ms=8
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=b4bde582-67c9-4a26-aeaa-52586789ad39
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=b4bde582-67c9-4a26-aeaa-52586789ad39 status_code=200 outcome=success duration_ms=12
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=2ebb8dff-25d2-4b2e-aca5-f13898d0b0b6
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=2ebb8dff-25d2-4b2e-aca5-f13898d0b0b6 status_code=200 outcome=success duration_ms=11
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=c6bb2d84-f303-41ec-8fd0-b2ad7f324f32
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=c6bb2d84-f303-41ec-8fd0-b2ad7f324f32 status_code=200 outcome=success duration_ms=15
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=9ec8f47d-6b6a-481c-8b47-4f09f20576d7
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=9ec8f47d-6b6a-481c-8b47-4f09f20576d7 status_code=200 outcome=success duration_ms=15
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=14eed7ad-c878-4a6d-8d74-605d56533f92
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=14eed7ad-c878-4a6d-8d74-605d56533f92 status_code=200 outcome=success duration_ms=15
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=241907a7-6a11-4e57-8726-595612f29a9d
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=241907a7-6a11-4e57-8726-595612f29a9d status_code=200 outcome=success duration_ms=19
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=224041fa-7ba9-4ef9-b5b3-51a135e831b8
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=224041fa-7ba9-4ef9-b5b3-51a135e831b8 status_code=200 outcome=success duration_ms=17
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=d36ce224-12b9-4f28-9a69-df75d16d0151
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=d36ce224-12b9-4f28-9a69-df75d16d0151 status_code=200 outcome=success duration_ms=11
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=786f1da1-f7b9-4d04-918d-2408c89ba67a
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=786f1da1-f7b9-4d04-918d-2408c89ba67a status_code=200 outcome=success duration_ms=11
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=eceaafec-5d71-4cda-96ae-b149001e60a2
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=eceaafec-5d71-4cda-96ae-b149001e60a2 status_code=200 outcome=success duration_ms=8
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=c9f6400b-bfe0-49c1-bf46-1095cc562ea0
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=c9f6400b-bfe0-49c1-bf46-1095cc562ea0 status_code=200 outcome=success duration_ms=11
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=40ee9a43-e7cf-4310-af6b-2120a3f8d000
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=40ee9a43-e7cf-4310-af6b-2120a3f8d000 status_code=200 outcome=success duration_ms=15
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=d5c84a92-8f51-4e95-b152-bb6b65fb7526
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=d5c84a92-8f51-4e95-b152-bb6b65fb7526 status_code=200 outcome=success duration_ms=15
+18:34:10 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=eea42be5-1d98-4643-b67e-a4bb907f10b8
+18:34:10 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=eea42be5-1d98-4643-b67e-a4bb907f10b8 status_code=200 outcome=success duration_ms=14
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=cf412967-569f-4b06-bba0-4e9555318147
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=cf412967-569f-4b06-bba0-4e9555318147 status_code=200 outcome=success duration_ms=10
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=d5a44dc1-ce36-419a-afe8-cf1843a18d52
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=d5a44dc1-ce36-419a-afe8-cf1843a18d52 status_code=200 outcome=success duration_ms=15
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=a1d6ba78-e1fa-4dad-b91c-273d155ee9bb
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=a1d6ba78-e1fa-4dad-b91c-273d155ee9bb status_code=200 outcome=success duration_ms=9
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=7aa41a27-c6d5-4616-bb21-c7c18aa0db8d
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=7aa41a27-c6d5-4616-bb21-c7c18aa0db8d status_code=200 outcome=success duration_ms=16
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=edac505c-6ce0-4651-ba9c-c26e5bbdea79
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=edac505c-6ce0-4651-ba9c-c26e5bbdea79 status_code=200 outcome=success duration_ms=11
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=d7996009-7710-4575-9df0-b683332c395f
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=d7996009-7710-4575-9df0-b683332c395f status_code=200 outcome=success duration_ms=23
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=697b8677-292c-407b-be67-f1adaef49f97
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=697b8677-292c-407b-be67-f1adaef49f97 status_code=200 outcome=success duration_ms=12
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=32369cab-2fa7-4553-85e5-a5f28070ebb0
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=32369cab-2fa7-4553-85e5-a5f28070ebb0 status_code=200 outcome=success duration_ms=10
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=b7e21654-6237-416b-bbd8-570adf2726b6
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=b7e21654-6237-416b-bbd8-570adf2726b6 status_code=200 outcome=success duration_ms=12
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=adec6d3f-2c51-4ac9-a0fb-d73200a2321f
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=adec6d3f-2c51-4ac9-a0fb-d73200a2321f status_code=200 outcome=success duration_ms=16
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=5ae449cf-2ec5-4312-acb9-8034312e0499
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=5ae449cf-2ec5-4312-acb9-8034312e0499 status_code=200 outcome=success duration_ms=15
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=07c0e5eb-e763-48a9-89a4-660bc64f89d7
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=07c0e5eb-e763-48a9-89a4-660bc64f89d7 status_code=200 outcome=success duration_ms=14
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=9ec1ae4d-43d2-429b-9d3a-45cbcdeb3749
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=9ec1ae4d-43d2-429b-9d3a-45cbcdeb3749 status_code=200 outcome=success duration_ms=8
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=9a9ab814-16b1-4a1f-b052-43e7635a8885
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=9a9ab814-16b1-4a1f-b052-43e7635a8885 status_code=200 outcome=success duration_ms=15
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=be7e538f-7c9f-4328-a396-52ec4f2c360e
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=be7e538f-7c9f-4328-a396-52ec4f2c360e status_code=200 outcome=success duration_ms=11
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=87577b53-0c0d-4162-b56e-7b0eb8f76a38
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=87577b53-0c0d-4162-b56e-7b0eb8f76a38 status_code=200 outcome=success duration_ms=12
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=2acaa831-0251-410b-8f8d-34eb481fe807
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=2acaa831-0251-410b-8f8d-34eb481fe807 status_code=200 outcome=success duration_ms=13
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=106a49ce-1808-474f-b551-67afcd6465e9
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=106a49ce-1808-474f-b551-67afcd6465e9 status_code=200 outcome=success duration_ms=13
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=0d9b0197-a2a1-4adb-ad52-352cd98e7de1
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=0d9b0197-a2a1-4adb-ad52-352cd98e7de1 status_code=200 outcome=success duration_ms=10
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=8cbfb07d-c7f2-49f5-8368-0a3e3b07a239
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=8cbfb07d-c7f2-49f5-8368-0a3e3b07a239 status_code=200 outcome=success duration_ms=8
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=28ebab93-c88e-4ff3-ac52-8447cdce2e8e
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=28ebab93-c88e-4ff3-ac52-8447cdce2e8e status_code=200 outcome=success duration_ms=9
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=7408a4e4-abb2-4e4a-9731-9a8cd050abb6
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=7408a4e4-abb2-4e4a-9731-9a8cd050abb6 status_code=200 outcome=success duration_ms=7
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=52c540a3-1de7-484a-b82e-ada38615dcdf
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=52c540a3-1de7-484a-b82e-ada38615dcdf status_code=200 outcome=success duration_ms=9
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=043d2bcf-c9e1-4861-9e86-5a8862d7fdcd
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=043d2bcf-c9e1-4861-9e86-5a8862d7fdcd status_code=200 outcome=success duration_ms=9
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=006e03c8-1a77-4bc7-9843-36ceda4a59d8
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=006e03c8-1a77-4bc7-9843-36ceda4a59d8 status_code=200 outcome=success duration_ms=8
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=9be53f74-7d4c-461a-b15c-ad099cebf1d9
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=9be53f74-7d4c-461a-b15c-ad099cebf1d9 status_code=200 outcome=success duration_ms=9
+18:34:11 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s40zqwfk785am8tvz0f3mx requestId=750b1ded-717b-45bd-a5f5-2968a81fdbc2
+18:34:11 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=750b1ded-717b-45bd-a5f5-2968a81fdbc2 status_code=200 outcome=success duration_ms=11
+18:34:12 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=e8692a62-ec15-46c7-9027-e6bdd6d2c7ee orpcError.name=Error orpcError.message="This sync has reached its member limit" orpcError.code=FORBIDDEN status_code=403 outcome=success duration_ms=3
+18:34:12 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx/join userAgent=curl/8.22.0 requestId=759c5f3f-5fda-4595-af06-ebf6c1c1012b orpcError.name=Error orpcError.message="This sync has reached its member limit" orpcError.code=FORBIDDEN status_code=403 outcome=success duration_ms=3
+18:34:12 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=GET path=/api/v2/profile-sync/profile_sync_01m4s40zqwfk785am8tvz0f3mx userAgent=curl/8.22.0 requestId=4cd3d1d1-7607-4a92-a2ed-58e99923500f status_code=200 outcome=success duration_ms=4

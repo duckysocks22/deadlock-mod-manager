@@ -1,0 +1,26 @@
+{
+  "id": "bcabbda23",
+  "name": "Local API caps test",
+  "command": "SENTRY_DSN=\"https://68ca3d16310ec3b252293d44ecf5fe21@o84215.ingest.us.sentry.io/4508546052915200\" PORT=9010 pnpm --filter @deadlock-mods/api dev",
+  "description": "Run apps/api locally on port 9010 with SENTRY_DSN override for testing sync caps",
+  "status": "killed",
+  "outputPath": ".pi/tasks/01a13212-feee-7543-8177-71e42c800bb2-39126/bcabbda23.output",
+  "cwd": "/home/foxtrot/Git/deadlock-mod-manager",
+  "startTime": 1791844443910,
+  "endTime": 1791844460084,
+  "exitCode": null,
+  "signal": "SIGTERM",
+  "pid": 423879,
+  "bytesWritten": 26793,
+  "isAgent": false,
+  "surviveReload": false,
+  "notified": true,
+  "notifyOnCompletion": true,
+  "triggerOnCompletion": true,
+  "shellPolicy": {
+    "policy": "inherit",
+    "executable": "/run/current-system/sw/bin/fish",
+    "argvPrefix": ["-c"],
+    "dialect": "user-non-posix"
+  }
+}

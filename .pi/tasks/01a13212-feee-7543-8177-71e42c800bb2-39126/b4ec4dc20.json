@@ -1,0 +1,26 @@
+{
+  "id": "b4ec4dc20",
+  "name": "Local API on 9010",
+  "command": "SENTRY_DSN=\"https://68ca3d16310ec3b252293d44ecf5fe21@o84215.ingest.us.sentry.io/4508546052915200\" PORT=9010 pnpm --filter @deadlock-mods/api dev",
+  "description": "Run apps/api locally on port 9010 with SENTRY_DSN override for smoke testing profile-sync routes",
+  "status": "killed",
+  "outputPath": ".pi/tasks/01a13212-feee-7543-8177-71e42c800bb2-39126/b4ec4dc20.output",
+  "cwd": "/home/foxtrot/Git/deadlock-mod-manager",
+  "startTime": 1791843929341,
+  "endTime": 1791843949412,
+  "exitCode": null,
+  "signal": "SIGTERM",
+  "pid": 378378,
+  "bytesWritten": 3899,
+  "isAgent": false,
+  "surviveReload": false,
+  "notified": true,
+  "notifyOnCompletion": true,
+  "triggerOnCompletion": true,
+  "shellPolicy": {
+    "policy": "inherit",
+    "executable": "/run/current-system/sw/bin/fish",
+    "argvPrefix": ["-c"],
+    "dialect": "user-non-posix"
+  }
+}

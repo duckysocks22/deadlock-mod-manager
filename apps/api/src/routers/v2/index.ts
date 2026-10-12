@@ -9,6 +9,7 @@ import { modAuthorsRouter } from "./mod-authors";
 import { modsRouter } from "./mods";
 import { perfCatalogRouter } from "./perf-catalog";
 import { policyRouter } from "./policy";
+import { profileSyncRouter } from "./profile-sync";
 import { profilesRouter } from "./profiles";
 import { reportsRouter } from "./reports";
 import { serversRouter } from "./servers";
@@ -26,6 +27,7 @@ export const v2Router = {
   ...perfCatalogRouter,
   ...policyRouter,
   ...vpkRouter,
+  ...profileSyncRouter,
   ...profilesRouter,
   ...reportsRouter,
   ...serversRouter,

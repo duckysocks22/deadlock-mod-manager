@@ -18,3 +18,4 @@ export * from "./reports";
 export * from "./rss-items";
 export * from "./segments";
 export * from "./vpk";
+export * from "./profile-sync";

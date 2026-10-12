@@ -130,7 +130,7 @@ const main = async () => {
   logger.withMetadata({ port: env.PORT }).info("Server started");
 
   Bun.serve({
-    port: 9000,
+    port: env.PORT,
     fetch: app.fetch,
     maxRequestBodySize: VPK_CONSTANTS.MAX_FILE_SIZE_BYTES,
     // Handlers that fan out to upstream providers enforce their own deadlines

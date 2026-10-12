@@ -1,0 +1,37 @@
+$ dotenv -e ../../.env -- bun run --watch --preload ./src/instrument.ts ./src/index.ts
+18:25:30 INFO api@2.0.0: Bootstrapping feature flags
+         environment=development
+18:25:30 INFO api@2.0.0 feature-flags: Starting feature flag bootstrap
+         environment=development count=15
+18:25:30 INFO api@2.0.0 feature-flags: Registering multiple feature flags
+         environment=development count=15
+18:25:30 INFO api@2.0.0 feature-flags: Completed feature flag registration
+         environment=development successCount=15 failureCount=0 total=15
+18:25:30 INFO api@2.0.0 feature-flags: Feature flag bootstrap completed
+         environment=development successCount=15 total=15
+18:25:30 INFO api@2.0.0: Server started
+         environment=development port=9010
+18:25:33 INFO api@2.0.0: Redis connected
+         environment=development requestId=6b6a41d3-3122-4bba-abc1-51d93d04f449
+18:25:39 INFO api@2.0.0: Profile sync created
+         environment=development syncId=profile_sync_01m4s3hd02e8nvmn1vvp9hjvte requestId=b25799da-4c83-4fc4-8c2d-df821d0116dc
+18:25:39 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync userAgent=curl/8.22.0 requestId=b25799da-4c83-4fc4-8c2d-df821d0116dc status_code=200 outcome=success duration_ms=95
+18:25:39 INFO api@2.0.0: Member joined profile sync
+         environment=development syncId=profile_sync_01m4s3hd02e8nvmn1vvp9hjvte requestId=79b55e7a-e6d7-47d0-a330-595938298c12
+18:25:39 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s3hd02e8nvmn1vvp9hjvte/join userAgent=curl/8.22.0 requestId=79b55e7a-e6d7-47d0-a330-595938298c12 status_code=200 outcome=success duration_ms=38
+18:25:39 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s3hd02e8nvmn1vvp9hjvte/join userAgent=curl/8.22.0 requestId=bdc628a6-81d6-4c10-99dd-d0f8f558af74 status_code=200 outcome=success duration_ms=3
+18:25:39 INFO api@2.0.0: Profile sync revision pushed
+         environment=development syncId=profile_sync_01m4s3hd02e8nvmn1vvp9hjvte revision=1 requestId=d2fb56ce-ba38-4444-9ae6-2a340ac05f2c
+18:25:39 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=PUT path=/api/v2/profile-sync/profile_sync_01m4s3hd02e8nvmn1vvp9hjvte userAgent=curl/8.22.0 requestId=d2fb56ce-ba38-4444-9ae6-2a340ac05f2c status_code=200 outcome=success duration_ms=15
+18:25:39 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=GET path=/api/v2/profile-sync/profile_sync_01m4s3hd02e8nvmn1vvp9hjvte userAgent=curl/8.22.0 requestId=c7ba2eb0-1ceb-4d53-a374-6a5f56e670c2 status_code=200 outcome=success duration_ms=6
+18:25:39 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=POST path=/api/v2/profile-sync/profile_sync_01m4s3hd02e8nvmn1vvp9hjvte/join userAgent=curl/8.22.0 requestId=63039533-4301-4596-854c-b77091b0229e orpcError.name=Error orpcError.message="Not Found" orpcError.code=NOT_FOUND status_code=404 outcome=success duration_ms=2
+18:25:39 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=PUT path=/api/v2/profile-sync/profile_sync_01m4s3hd02e8nvmn1vvp9hjvte userAgent=curl/8.22.0 requestId=b2d9ec61-dc32-4f5e-ae30-078d1eb92731 orpcError.name=Error orpcError.message=Forbidden orpcError.code=FORBIDDEN status_code=403 outcome=success duration_ms=3
+18:25:39 INFO api@2.0.0: http_request
+         environment=development operation=http_request method=GET path=/api/v2/profile-sync/does-not-exist userAgent=curl/8.22.0 requestId=79475de8-c6c9-4f37-a282-f78208fab6ba orpcError.name=Error orpcError.message="Not Found" orpcError.code=NOT_FOUND status_code=404 outcome=success duration_ms=6
